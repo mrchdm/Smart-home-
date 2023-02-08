@@ -1,40 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700;900&display=swap');
+
 * {
     margin: 0;
     padding: 0;
-}
-.mainText {
-    font-size: 16px;
-    line-height: 26px;
-    font-weight: 400;
-    letter-spacing: 0.05em;
+    font-family: sans-serif;
 }
 
-.brand {
+body {
+    .mainText {
+        font-size: 16px;
+        line-height: 26px;
+        font-weight: 400;
+        letter-spacing: 0.05em;
+    }
+
+    .container {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 60px;
+
+        @media (max-width: 1279px) {
+            max-width: 768px;
+        }
+    }
+}
+
+.top {
     height: 768px;
     background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
-    background-image: url(pictures/fisrtblock-background.png);
-    background-repeat: no-repeat;
-    background-position: right center;
-    height: 100%;
-    padding-top: 115px;
-    flex-grow: 1;
+    font-family: 'Roboto';
+    font-style: normal;
 
-    .brandWrap {
+
+    .top_container {
         display: flex;
         flex-direction: column;
         height: 100%;
-        padding-top: 115px;
-        flex-grow: 1;
 
     }
 
-    .brandHeader {}
+    .header_logo {
+        align-self: flex-end;
+    }
 
-    .brandDescription {}
+    .brandWrap {
+        padding-top: 115px;
+        flex-grow: 1;
+        background-image: url(pictures/fisrtblock-background.png);
+        background-repeat: no-repeat;
+        background-position: right center;
+
+        @media (max-width: 1279px) {
+            background-size: 40%;
+            background-position: right;
+        }
+
+        @media (max-width: 767px) {
+            background-image: none;
+            text-align: center;
+            margin: 0 auto;
+
+        }
+    }
+
+    .brandHeader {
+        font-weight: 600;
+        font-size: 64px;
+        line-height: 74px;
+        letter-spacing: 0.04em;
+        color: #1F3F68;
+
+        @media (max-width: 767px) {
+            font-weight: 600;
+            font-size: 32px;
+            line-height: 38px;
+        }
+
+    }
+
+    .brandDescription {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 26px;
+        letter-spacing: 0.05em;
+        color: #1F3F68;
+        opacity: 0.6;
+        max-width: 430px;
+        margin-top: 32px;
+    }
 
     .brandBut {
         line-height: 26px;
-        padding: 4px 8px;
         background: #5A98D0;
         box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
         border-radius: 10px;
@@ -44,50 +100,50 @@
         text-align: center;
         letter-spacing: 0.04em;
         color: #FFFFFF;
-        padding: 15px 50px;
+        padding: 15px 60px;
         text-decoration: none;
         display: inline-block;
-        margin-top: 71px;
+        margin-top: 70px;
     }
 }
 
 
 
-.ourTeam {
-    padding-top: 64px;
+// .ourTeam {
+//     padding-top: 64px;
 
-    .TeamCardsBox {
-        display: flex;
-        justify-content: space-between;
-        padding-top: 64px;
-        padding-bottom: 64px;
+//     .TeamCardsBox {
+//         display: flex;
+//         justify-content: space-between;
+//         padding-top: 64px;
+//         padding-bottom: 64px;
 
-        .Teamscard {
-            width: 359px;
-            padding: 44px 32px;
-            box-sizing: border-box;
-            /*fixe card sixe*/
-            background: #FFFFFF;
-            box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
-            border-radius: 10px;
-            display: flex;
-            flex-direction: column;
+//         .Teamscard {
+//             width: 359px;
+//             padding: 44px 32px;
+//             box-sizing: border-box;
+//             /*fixe card sixe*/
+//             background: #FFFFFF;
+//             box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+//             border-radius: 10px;
+//             display: flex;
+//             flex-direction: column;
 
-            .TeamsCardImg {
-                align-self: center;
-                margin-bottom: 51px;
-            }
+//             .TeamsCardImg {
+//                 align-self: center;
+//                 margin-bottom: 51px;
+//             }
 
-            .TeamsCardLink {
-                font-weight: 400;
-                font-size: 14px;
-                line-height: 30px;
-                letter-spacing: 0.05em;
-                color: #5A98D0;
-                text-decoration: none;
-                margin-top: 30px;
-            }
-        }
-    }
+//             .TeamsCardLink {
+//                 font-weight: 400;
+//                 font-size: 14px;
+//                 line-height: 30px;
+//                 letter-spacing: 0.05em;
+//                 color: #5A98D0;
+//                 text-decoration: none;
+//                 margin-top: 30px;
+//             }
+//         }
+//     }
 
-}
+// }
