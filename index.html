@@ -32,10 +32,10 @@
                 <h4 class="advantageCardHeader header4">Сhoose The Most <br> Suatable Tariff</h4>
                 <p class="advantageCardText mainText">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Voluptatibus quasi animi soluta vero laborum? Officia.</p>
-                    <div class="learnMore_block">
-                        <a href="#" class="advantageCardLink">Learn more</a>
-                        <img src="pictures/learnMore_arrow.svg" alt="icon arrow" class="iconArrow">
-                    </div>
+                <div class="learnMore_block">
+                    <a href="#" class="advantageCardLink">Learn more</a>
+                    <img src="pictures/learnMore_arrow.svg" alt="icon arrow" class="iconArrow">
+                </div>
             </div>
             <div class="advantageCard">
                 <img src="pictures/advantages_icon_technonologies.png" alt="technologies icon" class="advantageCardImg">
@@ -43,10 +43,10 @@
                     Comfrotable Home</h4>
                 <p class="advantageCardText mainText">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Voluptatibus quasi animi soluta vero laborum? Officia.</p>
-                    <div class="learnMore_block">
-                        <a href="#" class="advantageCardLink">Learn more</a>
-                        <img src="pictures/learnMore_arrow.svg" alt="icon arrow" class="iconArrow">
-                    </div>
+                <div class="learnMore_block">
+                    <a href="#" class="advantageCardLink">Learn more</a>
+                    <img src="pictures/learnMore_arrow.svg" alt="icon arrow" class="iconArrow">
+                </div>
             </div>
             <div class="advantageCard">
                 <img src="pictures/advantages_icon_updates.png" alt="updates icon" class="advantageCardImg">
@@ -63,35 +63,90 @@
         </div>
     </div>
 
-    <!-- <div class="projects">
-        <h3 class="header3">Our Finished Project</h3>
-        <p class="mainText projectsText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, amet. Lorem
+    <div class="project container">
+        <h3 class="projectHeader header3">Our Finished Project</h3>
+        <p class="mainText projectText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, amet. Lorem
             ipsum, dolor sit amet consectetur adipisicing elit. Libero, recusandae. Lorem ipsum dolor sit amet
             consectetur adipisicing elit. Odit, provident.
         </p>
-        <div class="project_photos">
-            <div class="project_item">
-                <img class="project_img" src="pictures/project-new.png" alt="photo">
-                <p class="project-text-img-1">Smart Home Installation</p>
+        <div class="projectBlocks">
+            <div class="projectBlock_install projectBlock">
+                <img class="projectBlock_img" src="pictures/SmartHome_install.png" alt="Smart home installation">
+                <p class="projectImgText">Smart Home Installation</p>
             </div>
-            <div class="project_parent">
-                <div class="project_item it2">
-                    <img class="project_img" src="images/project2-new.png" alt="photo">
-                    <p class="project-text-img-2">Sparklite App</p>
+            <div class="projectBlock_lowLine">
+                <div class="projectBlock_app projectBlock">
+                    <img class="projectBlock_img" src="pictures/controlling_app.png" alt="controlling app">
+                    <p class="projectImgText">Сontrolling App</p>
                 </div>
-                <div class="project_item it3">
-                    <img class="project_img" src="images/project3-new.png" alt="photo">
-                    <p class="project-text-img-3">Car-Rapetition App</p>
+                <div class="projectBlock_safetySystem projectBlock">
+                    <img class="projectBlock_img" src="pictures/safety_system.png" alt="safety ystem">
+                    <p class="projectImgText">Safety System</p>
                 </div>
 
             </div>
         </div>
     </div>
-    <div class="contact-block-desc">
-        <h2 class="header2">Contact us</h2>
-        <p class="mainText">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Modi, id.</p>
-    </div>
 
+    <footer class="contact ">
+        <div class="contactHeaderBlock">
+            <div class="container">
+                <h2 class="header2 contactHeader">Contact Us</h2>
+                <p class="mainText contactHeaderDescription">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+            </div>
+        </div>
+        <div class="sendUsMessageBlock container">
+            <div class="sendUsMessageBlock_contacts">
+                <div class="sendUsMessageBlock_pic">
+                    <img src="pictures/contact_icon.png" alt="">
+                </div>
+                <div class="sendUsMessageBlock_address">
+                    <div class="sendUsMessageBlock_header">ADDRESS</div>
+                    <p class="sendUsMessageBlock_text mainText">Id convallis placerat sit sed duis id amet volutpat quam
+                        a, pharetra.</p>
+                </div>
+                <div class="sendUsMessageBlock_phone">
+                    <div class="sendUsMessageBlock_header">PHONE</div>
+                    <div class="sendUsMessageBlock_wrap">
+                        <img src="pictures/contacts_phoneIcon.svg" alt="">
+                        <p class="sendUsMessageBlock_text mainText">+7-812-7313-4321</p>
+                    </div>
+                    <div class="sendUsMessageBlock_wrap">
+                        <img src="pictures/contacts_phoneIcon.svg" alt="">
+                        <p class="sendUsMessageBlock_text mainText">+7-817-0000-1234</p>
+                    </div>
+                </div>
+                <div class="sendUsMessageBlock_onlineService">
+                    <div class="sendUsMessageBlock_header">ONLINE SERVICE</div>
+                    <div class="sendUsMessageBlock_wrap">
+                        <img src="pictures/contacts_webIcon.svg" alt="">
+                        <p class="sendUsMessageBlock_text mainText">www.site.com</p>
+                    </div>
+                    <div class="sendUsMessageBlock_wrap">
+                        <img src="pictures/contacts_letterIcon.svg" alt="">
+                        <p class="sendUsMessageBlock_text mainText">hello.site@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <form action="#" class="sendUsMessageBlock_form">
+                <p class="form_header sendUsMessageBlock_header">SEND US MESSAGE</p>
+                <label for="name">Full name</label>
+                <input type="text" id="name" placeholder="Your Name">
+                <label for="email">Email</label>
+                <input type="text" id="email" placeholder="Your Email"
+                    pattern="^([a-z0-9\.-]+)(@)([a-z0-9-]+)(\.)([a-z]{2,})$">
+                <label for="message">Message</label>
+                <textarea name="" id="message" placeholder="Your Message" cols="30" rows="10"></textarea>
+                <button class="form_but">SUBMIT</button>
+
+            </form>
+        </div>
+        <div class="map_block container">
+            <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A3682e0d274cc13ef5243b56959bc307844e8b9b9543d9671cea73d1c7d700d69&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true"></script>
+        </footer>
+
+    <!-- 
     <footer class="footer">
         <div class="footerContainer">
             <div class="call-to-action">
